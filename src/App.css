@@ -1,0 +1,40 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  height: 100vh;
+}
+
+h1 {
+  color: #ffdd00;
+  font-size: 12vw;
+} 
+
+img {
+  max-height: 24vw;
+}
+
+h1 span  {
+  font-size: 80%;
+  color: #010101;
+}
+
+h1 {
+  transition: opacity 0.5s ease;
+}
+
+h1.faded span {
+  opacity: 0;
+}
+
+span {
+  transition: opacity 0.5s ease;
+}
+
+.faded {
+  padding: 0 64px;
+  border-radius: 64px;
+  background-color: #0101014e;
+}
