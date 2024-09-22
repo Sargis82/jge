@@ -8,23 +8,20 @@ const SmoothTextChange = () => {
 
 
   useEffect(() => {
-    // Set a timeout to hide spans after 3 seconds
     const timer = setTimeout(() => {
-      setHideSpans(true); // Start the fade out effect
-
-      // After 1 second (allowing spans to fade out), change the text
+      setHideSpans(true);
       setTimeout(() => {
-        setIsFinalText(true); // Change the text to "JGE"
+        setIsFinalText(true); 
       }, 500);
     }, 3000);
 
-    // Cleanup the timer on component unmount
     return () => clearTimeout(timer);
   }, []);
 
 
 
   return (
+    <>
     <h1 className={hideSpans ? 'faded' : ''}>
       {isFinalText ? (
         'JGE.am'
@@ -34,6 +31,7 @@ const SmoothTextChange = () => {
         </>
       )}
     </h1>
+    </>
   );
 };
 
