@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-
 const SmoothTextChange = () => {
 
   const [hideSpans, setHideSpans] = useState(false);
   const [isFinalText, setIsFinalText] = useState(false);
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -17,8 +15,6 @@ const SmoothTextChange = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
-
 
   return (
     <>
