@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='app'>
       <SmoothTextChange />
-      <img src={imgaaa} alt="image" />
+      <img src={imgaaa} alt="Under construction banner" />
       <h3>Coming Soon</h3>
     </div>
   )
